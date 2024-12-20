@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: rgba(8, 8, 8, 1);
+    --primary-font-color: rgba(222, 222, 222, 1);
+    --primary-font: 'Roboto Serif', serif;
+    --secondary-font: 'Public Sans', serif;;
+    --header-font: 'Source Serif 4', serif;
+
+}
+
+body {
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: var(--primary-color);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-font-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+nav h1{
+    font: 600 42px/42px var(--header-font);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+    font: 400 28px/32px var(--primary-font);
+    color: var(--primary-font-color);
+}
+
+nav ul>li:hover {
+    cursor: pointer;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    gap: 48px;
+}
+
+#hero-section h1{
+    text-align: center;
+    font: 700 120px/120px var(--primary-font);
+    color: var(--primary-font-color);
+    width: 800px;
+}
+
+.gallery-row-1 {
+    display: flex;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 48px;
+    padding-bottom: 48px;
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gallery-card h1 {
+    color: var(--primary-font-color);
+    font: 400 20px/24px var(--secondary-font);
+}
+
+.gallery-card p {
+    color: var(--primary-font-color);
+    font: 400 17px/24px rgba(222, 222, 222, 0.62);
+}
+
+#project-description {
+    display: flex;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#project-description p{
+    color: var(--primary-font-color);
+    font: 400 24px/32px var(--secondary-font);
+    width: 648px;
+}
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+#about-description {
+    text-align: center;
+    color: var(--primary-font-color);
+    font: 400 48px/52px var(--primary-font);
+    width: 900px;
+}
+
+
+#skills-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    gap: 48px;
+}
+
+#skills-section h1 {
+    color: var(--primary-font-color);
+    text-align: left;
+}
+
+#skills p {
+    width: 300px;
+    color: var(--primary-font-color);
+    font: 400 20px/24px var(--secondary-font);
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+#discover {
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(8, 8, 8, 0.7) 40%, rgba(199, 199, 199, 0.11) 80%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: 48px;
+}
+
+#discover-text {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 224px;
+    padding-bottom: 224px;
+}
+
+#discover-text h1 {
+    color: rgba(222, 222, 222, 1);
+    font: 700 120px/120px var(--primary-font);
+    width: 704px;
+}
+
+#discover-text p {
+    color: rgba(222, 222, 222, 0.5);
+    font: 400 24px/32px var(--secondary-font);
+    width: 704px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-color: rgba(204, 204, 204, 0.12);
+}
+
+.user-info-container {
+    display: flex;
+    gap: 12px;
+}
+
+.user-info-container img {
+    border-radius: 50%;
+}
+
+.user-info {
+    margin-top: 5px;
+}
+
+.user-info h1 {
+    font: 700 15px/20px var(--secondary-font);
+    color: var(--primary-font-color);
+}
+
+.user-info p {
+    font: 400 15px/20px var(--secondary-font);
+    color: rgba(222, 222, 222, 0.62);
+}
+
+.feedback {
+    font: 400 20px/24px var(--primary-font);
+    color: rgba(222, 222, 222, 0.62);
+    display: flex;
+    gap: 12px;
+    opacity: 80%;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#feedback-heading {
+    font: 700 48px/52px var(--primary-font);
+    color: var(--primary-font-color);
+    text-align: center;
+}
+
+#card-container {
+    display: flex;
+    gap: 24px;
+}
+
+#contact-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    gap: 48px;
+}
+
+#contact-me-section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+#contact-headings {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contact-headings h1 {
+    font: 700 28px/32px var(--primary-font);
+    color: rgba(222, 222, 222, 1);
+    text-align: center;
+}
+
+#contact-headings p {
+    font: 400 15px/20px var(--primary-font);
+    color: rgba(222, 222, 222, 1);
+    text-align: center;
+}
+
+#contact-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 600px;
+}
+
+input[type="text"] {
+    padding: 8px 16px;
+    background-color: rgba(204, 204, 204, 0.12);
+    border: none;
+    text-align: center;
+    font: 400 20px/24px var(--secondary-font);
+    color: rgba(222, 222, 222, 0.4);
+    width: 56px;
+    height: 64px;
+}
+
+#submit {
+    padding: 8px 16px;
+    background-color: rgba(75, 75, 75, 1);
+    color: rgba(252, 252, 252, 1);
+    font: 500 15px/20px var(--secondary-font);
+    width: 400px;
+}
+
+#skip {
+    text-align: center;
+    font: 500 15px/20px var(--secondary-font);
+    color: rgba(177, 177, 177, 1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+    padding-bottom: 24px;
+}
+
+footer h1 {
+    font: 400 28px/32px var(--primary-font);
+    color: rgba(222, 222, 222, 0.62);
+}
+
+footer button {
+    font: 500 20px/24px var(--secondary-font);
+    color: rgba(222, 222, 222, 1);
+    padding: 12px 24px;
+    border: 1.5px solid rgba(163, 163, 163, 0.2);
+    background-color: inherit;
+}
